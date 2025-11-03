@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'MTNsans';
+    src: url('MTNBrighterSans-Regular-CtKauW4m.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #004f70;
+    position: fixed;
+    min-height: 100vh;
+    justify-items: center;
+    font-weight: 400;
+    font-family: 'MTNsans';
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    
+}
+
+/*NAVIGATION STYLINGS*/
+.top-nav{
+    display: flex;
+    position: relative;
+    background: #004f70;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 0.1px solid rgb(145, 145, 145);
+    align-items: center;
+    padding-top: 6px;
+}
+
+.nav-logo{
+    margin-left: 17px;
+}
+
+.logo-img{
+    width: 50px;
+    height: 60px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-account{
+    margin-right: 8px;
+}
+
+.Dont-have-text{
+    color: #f2f0f0;
+    font-size: 12px;
+}
+
+.create-text{
+    color: hsl(46, 83%, 53%);
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/*LOGIN FORM STYLINGS*/
+.form-container{
+    margin-top: 45px;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container form h2{
+    color: black;
+    font-weight: 1000;
+    font-size: 20px;
+    
+}
+
+.form-container form p{
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control{
+    width: 100%;
+    height: 40px;
+    padding: 10px 35px 10px 20px;
+    background: white;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-family: 'MTNsans';
+}
+
+input:hover{
+    border-color: #d4af37;
+}
+
+input:focus{
+    border: 1px #ffcc00;
+    box-shadow: 0 0 0 3px #ffcc00;
+}
+
+/*Label color change on focus*/ 
+input:focus + label,
+.form-group:focus-within label {
+    color: #ffcc00;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputz{
+    display: flex;
+    position: relative;
+}
+
+.eyes{
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.check-box{
+  width: 22px;
+  height: 15px;
+  margin-right: 2px;
+  border: 1px solid silver;
+}
+
+.Remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.forgot{
+    font-weight: 800;
+}
+
+.btn{
+    margin-left: 50%;
+    transform: translatex(-50%);
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    background: #004f70;
+    color: white;
+    cursor: pointer;
+    font-family: 'MTNsans';
+}
+
+/*MEDIA QUERY FOR MAX-WIDTH:1024PX*/
+@media  screen and (max-width: 1024px) {
+    .form-container{
+        width: 100%;
+        height: 75%;
+    }
+}
+
+/*MEDIA QUERY FOR MAX-WIDTH:768PX*/
+@media screen and (max-width:768px) {
+    .Dont-have-text{
+        display: none;
+    }
+}
+
+/*MEDIA QUERY FOR MAX-WIDTH:480PX*/
+@media screen and (max-width:480px) {
+    .form-container{
+        width: 100%;
+        height: 75%;
+    }
+
+    .form-control{
+        width: 100%;
+    }
+}
+
+/*MEDIA QUERY FOR MAX-WIDTH:360PX*/
+@media screen and (max-width:360px) {
+    .form-container{
+        width: 100%;
+        height: 75%;
+    }
+}

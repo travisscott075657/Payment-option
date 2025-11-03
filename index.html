@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchant - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!--Navigation foundation-->
+    <nav class="top-nav">
+        <div class="nav-logo">
+            <img src="momo-logo.jpeg" class="logo-img" alt="Momo Logo">
+        </div>
+        <div class="create-account">
+           <span class="Dont-have-text"> Don't have an account yet?</span> <span class="create-text">Create Account</span>
+        </div>
+    </nav>
+     
+   <!--Login form-->
+   <div class="form-container">
+    <form action="">
+        <h2>Login to your Account</h2>
+        <p>Enter your personal details to create account</p>
+
+        <div class="form-group">
+            <label for="">Email Address</label>
+            <input type="email" placeholder="@yourmail.com" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Password</label> 
+            <div class="inputz">
+             <input type="password" placeholder="12 Characters (Digital,Symbol, Letters)" class="form-control" required id="password">
+             <img src="eyeclose.png" class="eyes" id="eyeicon">
+            </div>
+        </div>
+        <div class="Remember-forgot">
+            <div class="remember">
+                <label><input type="checkbox" class="check-box">Remember my Details</label>
+            </div>
+            <div class="forgot">Forgot Password?</div>
+        </div>
+        <input type="submit" class="btn" value="Login">
+    </form>
+   </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
